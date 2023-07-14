@@ -1,1 +1,9 @@
-
+---
+- hosts: nginx
+  become:
+    true
+  become_method:
+    sudo
+  roles:
+   - ssh
+   - nginx
