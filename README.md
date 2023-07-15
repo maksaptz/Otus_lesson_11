@@ -30,7 +30,10 @@
 
 
 
-#ssh-keygen
-#ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@nginx
+ssh-keygen
+
+ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@nginx
+
 ansible-playbook /etc/ansible/play.yml 
+
 curl http://192.168.50.11:8080
